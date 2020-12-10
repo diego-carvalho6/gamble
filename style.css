@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+body{
+    background-color: hotpink;
+}
+.main{
+    position: relative;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    
+    height: 900px;
+    background-color: rgb(19, 185, 185);
+    background-image: url("src/fundo.jpg");
+    background-size: 100% 100%;
+}
+.header{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    
+    
+    
+}
+.middle{
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    
+}
+.button{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 100px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(124, 114, 114);
+    border: 2px solid rgb(48, 47, 47);
+    border-radius: 50%;
+}
+.footer{
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    
+    
+}
+.floor{
+   
+    opacity: 50%;
+    background-image: url("src/chao.jpeg");
+    background-size: contain;
+    transform: rotatex(70deg) translateY(380px);
+    height: 400px;
+    background-color: green;
+}
+.game{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    background-image: url("src/bolaeditada.jpeg");
+    background-size: cover;
+    
+    
+}
+.game1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    width: 60px;
+    text-align: center;
+    font-size: 17px;
+
+}
+@media (min-width: 900px){
+    .main{
+        max-width: 900px;
+    }
+}
+@media (min-width: 1200px){
+    .main{
+        max-width: 1200px;
+    }
+}
